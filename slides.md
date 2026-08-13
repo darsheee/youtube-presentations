@@ -1,9 +1,12 @@
 ---
-theme: default
-background: https://cover.sleek.dev
-title: Welcome to My YouTube Presentation
+# Slidev Theme Selection (To switch themes, change the theme line below):
+# - theme: apple-basic (Recommended: Modern, clean Apple-style presentation)
+# - theme: seriph      (High-end developer editorial style)
+# - theme: default     (Standard high-contrast customizable style)
+theme: apple-basic
+title: Modern Tech Presentation 2026
 info: |
-  ## YouTube Presentation Slides
+  ## Modern Tech Presentation
   Created with Slidev for YouTube content creation.
 class: text-center
 drawings:
@@ -12,12 +15,12 @@ transition: slide-left
 mdc: true
 ---
 
-# Welcome to My YouTube Presentation 🎬
+# Welcome to Tech Presentations 🎬
 
-Powered by **Slidev** & **Google Antigravity**
+Modern 2026 Developer Presentation Workflow
 
 <div class="pt-12">
-  <span @click="$nav.next" class="px-2 py-1 rounded cursor-pointer hover:bg-white/10" title="Next Slide">
+  <span @click="$nav.next" class="px-3 py-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-sm font-medium cursor-pointer hover:bg-gray-200" title="Next Slide">
     Press Space or Right Arrow for next slide <carbon:arrow-right class="inline"/>
   </span>
 </div>
@@ -26,42 +29,43 @@ Powered by **Slidev** & **Google Antigravity**
 transition: fade-out
 ---
 
-# 📋 Agenda
+# 📋 Presentation Agenda
 
-- **01. Introduction** — Modern Developer Presentation Workflows
-- **02. Interactive Code** — Live Code Highlighting & Executable Snippets
-- **03. Custom Styling** — Full Tailwind & Vue Component Support
-- **04. Summary & Links** — Wrap up and Next Steps
+- **01. Introduction** — Modern Tech Presentation Workflows
+- **02. Live Code & Demos** — Interactive Syntax Highlighting
+- **03. Custom Components** — Full Tailwind & Vue Component Support
+- **04. Summary & Q&A** — Key Takeaways & Community Links
 
 ---
 
 # 💻 Interactive Live Code Snippet
 
 ```ts
-// Slidev supports syntax highlighting out of the box!
+// Slidev supports live syntax highlighting out of the box!
 function createYouTubePresentation(topic: string) {
   return {
     engine: "Slidev",
-    framework: "Vue 3",
-    status: "Ready to Present 🚀"
+    runtime: "Bun v1.3.14",
+    theme: "apple-basic",
+    status: "Ready for YouTube Recording 🚀"
   };
 }
 
-console.log(createYouTubePresentation("Awesome Tech Stack"));
+console.log(createYouTubePresentation("2026 Tech Stack"));
 ```
 
 ---
 
 # 🎯 Key Features
 
-<div class="grid grid-cols-2 gap-4 mt-6">
-  <div class="p-4 rounded-lg bg-white/5 border border-white/10">
-    <h3 class="font-bold text-lg mb-2">⚡ Markdown Powered</h3>
-    <p class="text-sm opacity-80">Write presentation slides in plain Markdown with full Vue component embedding.</p>
+<div class="grid grid-cols-2 gap-4 mt-6 text-left">
+  <div class="p-5 rounded-xl bg-gray-50 border border-gray-200">
+    <h3 class="font-bold text-lg mb-2 text-gray-900">⚡ Markdown Powered</h3>
+    <p class="text-sm text-gray-600">Write presentation slides in plain Markdown with full Vue component embedding.</p>
   </div>
-  <div class="p-4 rounded-lg bg-white/5 border border-white/10">
-    <h3 class="font-bold text-lg mb-2">🎨 Custom Themes</h3>
-    <p class="text-sm opacity-80">Rich built-in themes, dark mode support, and Tailwind CSS styling.</p>
+  <div class="p-5 rounded-xl bg-gray-50 border border-gray-200">
+    <h3 class="font-bold text-lg mb-2 text-gray-900">🎨 Sleek Apple Typography</h3>
+    <p class="text-sm text-gray-600">Clean light/dark contrast, crisp typography, and fluid slide transitions.</p>
   </div>
 </div>
 
