@@ -1,16 +1,21 @@
 {
-  "name": "youtube-presentations",
-  "private": true,
   "type": "module",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "dev": "slidev --open",
-    "build": "slidev build",
-    "export": "slidev export"
+    "dev": "slidev",
+    "build": "tsx ../../scripts/build.ts /2025/viteconf/",
+    "export": "slidev export --per-slide --output ../2025-10-09-viteconf-en.pdf"
   },
   "dependencies": {
     "@slidev/cli": "^52.19.0",
-    "@slidev/theme-apple-basic": "^0.25.1",
-    "@slidev/theme-default": "latest",
-    "@slidev/theme-seriph": "^0.25.0"
+    "@slidev/theme-apple-basic": "latest",
+    "@slidev/theme-default": "^0.25.0",
+    "@slidev/theme-seriph": "latest",
+    "@unocss/preset-web-fonts": "^66.7.5",
+    "chroma-js": "^3.2.0",
+    "markdown-it-magic-link": "^0.1.4",
+    "unocss": "^66.7.5",
+    "uqr": "^0.1.3"
   }
 }
